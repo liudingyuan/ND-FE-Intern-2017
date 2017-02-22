@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+body,h2, h3, p, figure {
+	margin: 0;
+	font-size: 16px;
+}
+body a {
+	text-decoration: none;
+}
+body a:hover {
+	text-decoration: underline;
+}
+body ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
