@@ -71,7 +71,7 @@
 	        <div class="tab-container">
 	        	<div class="tabs">
 	        		<div class="tab">
-	        		    <span class="btn-switch btn-switch-01 active">ALL</span>
+	        		    <span class="btn-switch btn-switch-01 active m-active">ALL</span>
 	        		    <div class="tab-content">TAB: ALL</div>
 	        		</div>
 	        		<div class="tab">
@@ -171,10 +171,12 @@
 		(function () {
 			const tabContainer = document.querySelector('.tabs');
 			const switchBtns   = document.querySelectorAll('.btn-switch');
+			const isMobile     = !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/);
 			
             function clearActive() {
             	switchBtns.forEach(function (btn) {
             		btn.classList.remove('active');
+            		btn.classList.remove('m-active');
             	});
             }
 
@@ -184,6 +186,10 @@
             	if (target.classList.contains('btn-switch')) {
             		clearActive();
             		target.classList.add('active');
+
+            		if (isMobile) {
+            			target.classList.add('m-active');
+            		}
             	}
             }, false);
 		})();

@@ -148,4 +148,38 @@ aside {
 	.rank {display: none;}
 
 	.mid-content {width: 100%; margin-right: 0;}
+
+	.tab {float: none;width: 4em;}
+	.btn-switch {
+		font-size: 10px;
+		padding: 0;
+		border-top: 0;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		border-left: 4px solid;
+		word-break: break-all;
+	}
+	.btn-switch-01 {
+		border-left-color: rgb(82,42,92);
+	}
+	.btn-switch-02 {
+		border-left-color: rgb(223,198,230);
+	}
+	.btn-switch-03 {
+		border-left-color: rgb(210,166,255);
+	}
+	.btn-switch-04 {
+		border-left-color: rgb(255,169,140);
+	}
+	.btn-switch-05 {
+		border-bottom: 0;
+		border-left-color: rgb(242,207,77);
+	}
+	.m-active {border-right: 0;}
+	.tab-content {
+		top: 0 !important;
+		margin-left: 4em;
+	}
+
+	.loading {margin-left: 4em;}
 }
