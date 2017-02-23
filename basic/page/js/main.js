@@ -4,11 +4,11 @@
 	var designWidth = 375, rem2px = 100;
 	document.documentElement.style.fontSize = window.innerWidth / designWidth * rem2px + 'px'; 
 
-	let isMobile = false;
-	let isOpen = false;
+	let isMobile     = false;
+	let isOpen       = false;
 	const iconGithub = document.querySelector('.icon-github');
-	const headMenu = document.querySelector('.h-menu');
-	const menuList = document.querySelector('.h-nav ul');
+	const headMenu   = document.querySelector('.h-menu');
+	const menuList   = document.querySelector('.h-nav ul');
 
 	//判断是否是移动设备
 	isMobile = !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/);

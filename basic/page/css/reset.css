@@ -3,6 +3,7 @@
 }
 body,h2, h3, p, figure {
 	margin: 0;
+	font-family: "Microsoft YaHei",Arial,sans-serif;
 	font-size: 16px;
 }
 body a {
@@ -15,4 +16,10 @@ body ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+input {outline: none;}
+button {
+	padding: 0;
+	border: 0;
+	outline: none;
 }
