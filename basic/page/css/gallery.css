@@ -1,10 +1,11 @@
 main {
-	padding: .2rem .25rem 1rem;
+	padding: .05rem .25rem 1rem;
 	background: rgb(238,238,238);
 }
 
 aside {
 	float: right;
+	margin-top: 40px;
 	width: 300px;
 }
 
@@ -85,12 +86,15 @@ aside {
 .tab-container {
 	position: relative;
 	min-height: 200px;
-	background: #fff;
 }
 .tabs:after {content: '';display: table;clear: both;}
-.tabs {transform: translateY(-40px);}
 .tab {
 	float: left;
+	background: #fff;
+}
+.tab-content {
+	position: absolute;
+	left: -9999em;
 	background: #fff;
 }
 .btn-switch {
@@ -119,15 +123,11 @@ aside {
 .btn-switch-05 {
 	border-top-color: rgb(242,207,77);
 }
-.tab-content {
-	position: absolute;
-	left: -9999em;
-}
 .active {
 	border-bottom: 0;
 	opacity: 1;
 }
-.active ~ .tab-content {left: 0;right: 0;}
+.active ~ .tab-content {top: 40px;bottom: 0;left: 0;right: 0;}
 
 .loading {
 	margin-top: 1em;
