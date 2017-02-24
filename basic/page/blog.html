@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/main-page.css">
 	<link rel="stylesheet" href="./css/blog.css">
+	<link rel="stylesheet" href="./css/Dcalendar.css">
 </head>
 <body>
 	<header>
@@ -44,7 +45,7 @@
 					<li><a href="#">其它文章</a></li>
 				</ul>
 			</div>
-			<div class="calendar"></div>
+			<div class="calendar dcalendar"></div>
 			<div class="all-tags">
 				<span>Tags</span>
 				<div class="tags-container">
@@ -210,5 +211,10 @@
 		</div>
 	</footer>
 	<script src="./js/main.js"></script>
+	<script src="./js/Dcalendar.js"></script>
+	<script>
+		var calendar = new Dcalendar();
+		calendar.init();
+	</script>
 </body>
 </html>

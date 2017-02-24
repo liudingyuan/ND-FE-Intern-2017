@@ -1,0 +1,8 @@
+.dcalendar-container table {width: 100%;text-align: center;border-collapse: collapse;empty-cells: show;}
+.dcalendar-operate {color: rgb(119,60,136);}
+.dcalendar-prev, .dcalendar-next {cursor: pointer;user-select: none;}
+.dcalendar-day tr {border-bottom: 1px solid #ccc;}
+.dcalendar-day td {padding: .5em;color: #bbb;cursor: default;transition: background-color .3s;}
+.dcalendar-day [data-day]:hover:not(.active) {background: rgb(233,198,230);}
+.dcalendar-day .active {color: #fff;background: rgb(119,60,136);}
+.dcalendar-day .mark {color: rgb(119,60,136);font-weight: bold;cursor: pointer;}

@@ -58,7 +58,7 @@ aside > div {margin-bottom: 1em;}
 li.dir-active {border-left-color: rgb(82,42,92);}
 .directory li a {display: block;color: #000;}
 
-.calendar {height: 200px;background: #fff;}
+.dcalendar {padding: .5em;background: #fff;}
 
 .all-tags {padding: .6em; background: #fff;}
 .tags-container {
