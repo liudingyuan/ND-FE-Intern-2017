@@ -1,99 +1,125 @@
-/*页面头部*/
+/* 页面头部 */
 header {
-	position: relative;
-	height: 80px;
-	background: rgb(82,42,92);
+  position: relative;
+  height: 80px;
+  background: rgb(82, 42, 92);
 }
 
 .logo a {
-	color: #fff;
-    font-size: 20px;
+  color: #fff;
+  font-size: 20px;
 }
+
 .logo {
-	position: absolute;
-	padding: 5px;
-	width: 80px;
-    bottom: 0px;
-    left: 80px;
-    text-align: center;
+  position: absolute;
+  padding: 5px;
+  width: 80px;
+  bottom: 0;
+  left: 80px;
+  text-align: center;
 }
 
 .icon-github {
-	position: absolute;
-	right: 10px;
-	bottom: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
 }
 
 .h-nav {
-	position: absolute;
-	right: 100px;
-	bottom: 10px;
+  position: absolute;
+  right: 100px;
+  bottom: 10px;
 }
+
 .h-nav li {
-	margin: 0 10px;
-    display: inline-block;
+  margin: 0 10px;
+  display: inline-block;
 }
-.h-nav li a {color: #fff;}
+.h-nav li a { color: #fff; }
 
 .h-menu {
-	display: inline-block;
-	margin-top: 5px;
-	margin-left: 5px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
-.hide {
-	display: none;
+.hide { display: none; }
+
+/* 页面头部结束 */
+
+/* 页脚 */
+footer { background: rgb(0, 0, 0); }
+footer a { color: #fff; }
+
+.f-nav {
+  text-align: center;
+  border-bottom: 1px solid #333;
 }
 
-/*页面头部结束*/
-
-/*页脚*/
-footer {background: rgb(0,0,0);}
-footer a {color: #fff;}
-.f-nav {text-align: center;border-bottom: 1px solid #333;}
 .f-nav li {
-	display: inline-block;
-	margin: 5px 10px;
+  display: inline-block;
+  margin: 5px 10px;
 }
-.link-lists {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 30px 100px;
-}
-.f-link {width: 20%;}
-.f-link li {line-height: 1.4em;margin-right: 1em;}
-.f-link>a {display: block; margin-bottom: 1em;}
-.copyright {text-align: center; margin-top: 2em;}
-.copyright a {display: block;margin-bottom: 1em;}
 
-/*页脚结束*/
+.link-lists {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 100px;
+}
+
+.f-link { width: 20%; }
+
+.f-link li {
+  line-height: 1.4em;
+  margin-right: 1em;
+}
+
+.f-link > a {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.copyright a {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* 页脚结束 */
 
 @media only screen and (max-width: 768px) {
-	header {height: 40px;}
-	.h-nav {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		height: 100px;
-		z-index: 3;
-	}
-	.h-nav ul {
-		position: absolute;
-		overflow: hidden;
-		width: 100%;
-		height: 0;
-		transition: height .5s;
-	}
-	.h-nav li {
-		display: block;
-		margin: 0;
-		padding: 0 10px;
-		border-bottom: 1px solid #000;
-		background: rgba(0,0,0,.8);
-	}
-    
-    .link-lists {padding: 10px;}
-	.f-link {width: 100%;}
-	.f-link li {display: inline-block;}
+  header { height: 40px; }
+
+  .h-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+  }
+
+  .h-nav ul {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s;
+  }
+
+  .h-nav li {
+    display: block;
+    margin: 0;
+    padding: 0 10px;
+    border-bottom: 1px solid #000;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .link-lists { padding: 10px; }
+  .f-link { width: 100%; }
+  .f-link li { display: inline-block; }
 }

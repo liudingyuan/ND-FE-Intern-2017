@@ -1,27 +1,33 @@
-* {
-	box-sizing: border-box;
-}
+* { box-sizing: border-box; }
+
 body {
-	margin: 0;
-	font-family: "Microsoft YaHei",Arial,sans-serif;
-	font-size: 16px;
-	line-height: 1;
+  margin: 0;
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
 }
-body a {
-	text-decoration: none;
-}
-body a:hover {
-	text-decoration: underline;
-}
+
+body a { text-decoration: none; }
+body a:hover { text-decoration: underline; }
+
 body ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-h1, h2, h3, h4, h5, h6, p, figure {margin: 0;}
-input {outline: none;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure { margin: 0; }
+input { outline: none; }
+
 button {
-	padding: 0;
-	border: 0;
-	outline: none;
+  padding: 0;
+  border: 0;
+  outline: none;
 }

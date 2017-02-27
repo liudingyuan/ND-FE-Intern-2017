@@ -1,191 +1,236 @@
-* {
-	box-sizing: border-box;
-}
-body,h2, h3, p, figure {
-	margin: 0;
-}
-body a {
-	text-decoration: none;
-}
-body a:hover {
-	text-decoration: underline;
-}
+* { box-sizing: border-box; }
+
+body,
+h2,
+h3,
+p,
+figure { margin: 0; }
+
+body a { text-decoration: none; }
+body a:hover { text-decoration: underline; }
+
 body ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-/*页面头部*/
+/* 页面头部 */
 .header {
-	position: relative;
-	height: 80px;
-	background: rgb(82,42,92);
+  position: relative;
+  height: 80px;
+  background: rgb(82, 42, 92);
 }
 
-.logo a {
-	color: #fff;
-}
+.logo a { color: #fff; }
+
 .logo {
-	position: absolute;
-	padding: 5px;
-	width: 80px;
-    bottom: 0px;
-    left: 80px;
-    text-align: center;
+  position: absolute;
+  padding: 5px;
+  width: 80px;
+  bottom: 0;
+  left: 80px;
+  text-align: center;
 }
 
 .icon-github {
-	position: absolute;
-	right: 10px;
-	bottom: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
 }
 
 .h-nav {
-	position: absolute;
-	right: 100px;
-	bottom: 10px;
+  position: absolute;
+  right: 100px;
+  bottom: 10px;
 }
+
 .h-nav li {
-	margin: 0 10px;
-    display: inline-block;
+  margin: 0 10px;
+  display: inline-block;
 }
-.h-nav li a {color: #fff;}
+.h-nav li a { color: #fff; }
 
 .h-menu {
-	display: inline-block;
-	margin-top: 5px;
-	margin-left: 5px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
-.hide {
-	display: none;
-}
+.hide { display: none; }
 
-/*页面头部结束*/
+/* 页面头部结束 */
 
 .banner {
-	position: relative;
-	height: 700px;
-	background: url(../img/banner-bg.jpg) no-repeat;
-	background-size: cover;
+  position: relative;
+  height: 700px;
+  background: url(../img/banner-bg.jpg) no-repeat;
+  background-size: cover;
 }
+
 .bg-info {
-	position: absolute;
-	right: 200px;
-	bottom: 0;
-	padding: 10px;
-	background: rgba(255,255,255,.3);
-	width: 400px;
-	color: #fff;
+  position: absolute;
+  right: 200px;
+  bottom: 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 400px;
+  color: #fff;
 }
-.bg-info h3 {margin: 10px 0;text-align: right;}
-.bg-info p {text-indent: 2em;}
+
+.bg-info h3 {
+  margin: 10px 0;
+  text-align: right;
+}
+.bg-info p { text-indent: 2em; }
 
 .content {
-	padding: 10px 100px 100px;
-	overflow: hidden;
-	background: rgb(238, 238, 238);}
+  padding: 10px 100px 100px;
+  overflow: hidden;
+  background: rgb(238, 238, 238);
+}
+
 .card-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
 }
+
 .card {
-	background: #fff;
-	padding: 10px;
-	width: 30%;
-	margin: 10px 10px 0 0;
+  background: #fff;
+  padding: 10px;
+  width: 30%;
+  margin: 10px 10px 0 0;
 }
-.card img {width: 100%;height: 100%;}
-.card p {text-indent: 2em;}
 
-.avator {height: 150px; text-align: center;}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+.card p { text-indent: 2em; }
+
+.avator {
+  height: 150px;
+  text-align: center;
+}
+
 .avator a {
-	display: inline-block;
-	overflow: hidden;
-	border-radius: 50%;
-	transform: translateY(-30%);
-	width: 150px;
-	height: 100%;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  transform: translateY(-30%);
+  width: 150px;
+  height: 100%;
 }
-.avator img {width: 100%; height: 100%;}
+
+.avator img {
+  width: 100%;
+  height: 100%;
+}
+
 .introduce article {
-	margin: 0 auto;
-	width: 50%;
+  margin: 0 auto;
+  width: 50%;
 }
-.introduce article h2 {text-align: center;}
-.introduce article p {text-indent: 2em;margin: 2em 0;}
+.introduce article h2 { text-align: center; }
 
-/*页脚*/
-.footer {background: rgb(0,0,0);}
-.footer a {color: #fff;}
-.f-nav {text-align: center;border-bottom: 1px solid #333;}
+.introduce article p {
+  text-indent: 2em;
+  margin: 2em 0;
+}
+
+/* 页脚 */
+.footer { background: rgb(0, 0, 0); }
+.footer a { color: #fff; }
+
+.f-nav {
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
 .f-nav li {
-	display: inline-block;
-	margin: 5px 10px;
+  display: inline-block;
+  margin: 5px 10px;
 }
-.link-lists {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 30px 100px;
-}
-.f-link {width: 20%;}
-.f-link li {line-height: 1.4em;margin-right: 1em;}
-.f-link>a {display: block; margin-bottom: 1em;}
-.copyright {text-align: center; margin-top: 2em;}
-.copyright a {display: block;margin-bottom: 1em;}
 
-/*页脚结束*/
+.link-lists {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 100px;
+}
+.f-link { width: 20%; }
+
+.f-link li {
+  line-height: 1.4em;
+  margin-right: 1em;
+}
+
+.f-link > a {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.copyright a {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* 页脚结束 */
 
 @media only screen and (max-width: 768px) {
-	.header {height: 40px;}
-	.h-nav {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		height: 100px;
-		z-index: 3;
-	}
-	.h-nav ul {
-		position: absolute;
-		overflow: hidden;
-		width: 100%;
-		height: 0;
-		transition: height .5s;
-	}
-	.h-nav li {
-		display: block;
-		margin: 0;
-		padding: 0 10px;
-		border-bottom: 1px solid #000;
-		background: rgba(0,0,0,.8);
-	}
+  .header { height: 40px; }
 
+  .h-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+  }
 
-	.banner {
-		height: 350px;
-	}
-	.bg-info {
-		position: static;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-	.bg-info h3 {text-align: left;}
+  .h-nav ul {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s;
+  }
 
-	.content {padding: 10px 10px 40px;}
-	.card {width: 100%;}
+  .h-nav li {
+    display: block;
+    margin: 0;
+    padding: 0 10px;
+    border-bottom: 1px solid #000;
+    background: rgba(0, 0, 0, 0.8);
+  }
 
-	.avator {height: 100px;}
-	.avator a {width: 100px;}
-	.introduce article {width: 90%;}
-    
-    .link-lists {padding: 10px;}
-	.f-link {width: 100%;}
-	.f-link li {display: inline-block;}
+  .banner { height: 350px; }
+
+  .bg-info {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .bg-info h3 { text-align: left; }
+
+  .content { padding: 10px 10px 40px; }
+  .card { width: 100%; }
+
+  .avator { height: 100px; }
+  .avator a { width: 100px; }
+  .introduce article { width: 90%; }
+
+  .link-lists { padding: 10px; }
+  .f-link { width: 100%; }
+  .f-link li { display: inline-block; }
 }
