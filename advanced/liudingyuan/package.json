@@ -1,0 +1,19 @@
+{
+  "name": "liudingyuan",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "eslint-config-plato": "^0.0.3",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-plato": "0.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
