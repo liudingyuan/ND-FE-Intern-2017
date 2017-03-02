@@ -5,34 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>task3 drag</title>
     <style>
-      body { text-align: center; user-select: none; }
+      * { box-sizing: border-box; }
+
+      body {
+        text-align: center;
+        user-select: none;
+      }
+
       .container {
-        display: inline-block;
-        margin: 20px;
+        display: block;
+        float: left;
+        margin: 100px;
         width: 300px;
         min-height: 600px;
-        border: 1px solid #333;
+        border: 1px solid #bbb;
       }
+
       .box {
+        width: 300px;
         height: 60px;
-        border: 1px solid #333;
-        background: #ffc0cb;
+        border: 1px solid #eee;
+        background: #3498db;
         cursor: move;
+        z-index: 1;
+      }
+
+      .drop {
+        position: absolute;
+        background: rgba(52, 152, 219, 0.5);
+      }
+
+      .active{
+        box-shadow: 0  0 15px #00bfff;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
     </div>
     <div class="container">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div></div>    
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+    </div>
+    <script src="./js/util.js"></script> 
     <script src="./js/advanced_3.js"></script>
   </body>
 </html>
