@@ -5,6 +5,7 @@ function getPosition (element) {
     y: elPosition.top
   };
 }
+
 (function () {
   const containers = document.querySelectorAll('.container');
   const containerArr = [];
@@ -62,7 +63,6 @@ function getPosition (element) {
 
   // 将拖放目标放置在指定位置
   function toggleContainer (target, referenceEl, selector) {
-    // selector.appendChild(target);
     selector.insertBefore(target, referenceEl);
   }
 
@@ -98,6 +98,8 @@ function getPosition (element) {
       }
 
       if (container) {
+        dropObj.style.left = 'auto';
+        dropObj.style.top = 'auto';
         toggleContainer(dropObj, box, container);
         if (box) { box.classList.remove('active-box'); }
       } else {
@@ -106,6 +108,8 @@ function getPosition (element) {
       }
 
       dropObj.classList.remove('drop');
+      dropObj.classList.add('flash');
+      dropObj.addEventListener('animationend', function () { this.classList.remove('flash'); }, false);
       dropObj = null;
       for (const item of containers) {
         item.classList.remove('active');

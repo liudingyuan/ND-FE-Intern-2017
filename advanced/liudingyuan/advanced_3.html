@@ -8,6 +8,8 @@
       * { box-sizing: border-box; }
 
       body {
+        display: flex;
+        justify-content: space-around;
         text-align: center;
         user-select: none;
       }
@@ -15,7 +17,7 @@
       .container {
         display: block;
         float: left;
-        margin: 100px;
+        /*margin: 100px;*/
         width: 300px;
         min-height: 600px;
         border: 1px solid #bbb;
@@ -42,6 +44,17 @@
       .active-box {
         box-shadow: 0 -3px 0 #fb8c00;
       }
+      .flash {
+        box-shadow: 0 0 10px 0 #26c6da;
+        animation: flashing 0.3s;
+      }
+      @keyframes flashing {
+        0 { box-shadow: 0 0 10px 0 #26c6da; }
+        25% { box-shadow: 0 0 10px 3px #26c6da; }        
+        50% { box-shadow: 0 0 10px 5px #26c6da; }
+        75% { box-shadow: 0 0 10px 3px #26c6da; }        
+        100% { box-shadow: 0 0 10px 0 #26c6da; }        
+      }
     </style>
   </head>
   <body>
@@ -57,7 +70,6 @@
       <div class="box">C</div>
       <div class="box">D</div>
     </div>
-    <!--<script src="./js/util.js"></script>-->
     <script src="./js/advanced_3.js"></script>
   </body>
 </html>
